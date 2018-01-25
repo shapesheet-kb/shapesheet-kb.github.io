@@ -1,0 +1,335 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Coordinate_Transformation.files/filelist.xml">
+ </head>
+
+<body lang=EN link="#0563C1" vlink="#954F72" style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN style='font-size:9.0pt;line-height:115%;
+font-family:"Tahoma",sans-serif;mso-ansi-language:EN'><a href="https://shapesheet-kb.github.io/">Main page</a> /<span style='mso-spacerun:yes'>  </span><span style='color:#333333'><a
+href="https://shapesheet-kb.github.io/en/index.htm">Useful info about ShapeSheet™</a></span> <span
+style='mso-spacerun:yes'> </span>/ <a
+href="https://msdn.microsoft.com/en-us/library/office/ff765103.aspx">Visio ShapeSheet reference</a>  / <a
+href="../Functions_by_category.htm">ShapeSheet™. List of functions by category </a><span style='mso-spacerun:yes'></span></p>
+
+
+  <table class=MsoNormalTable border=1 cellpadding=0 width="100%"
+   style='width:100.0%;border:none;border-bottom:solid #C8CDDE 1.0pt'>
+   <tr>
+    <td valign=top style='border:none;border-bottom:solid #D4DFFF 1.0pt;
+    padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal style='margin:3.0pt'><b><span style='font-size:12pt;
+    line-height:115%;font-family:"Segoe UI","sans-serif";color:#003399'>Cell manipulations control flow
+</span></b></p>
+    </td>
+   </tr>
+  </table>
+  <br>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=756
+   style='width:566.9pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+   mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+
+   <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=756
+    style='width:566.9pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+    mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+     <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+     mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+     <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal'><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Name</span></p>
+     </td>
+     <td width=605 valign=top style='width:453.5pt;border:solid windowtext 1.0pt;
+     border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+     solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+     <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal'><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Details</span></p>
+     </td>
+    </tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>DEPENDSON</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Creates a cell reference dependency.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>DEPENDSON(<i>cellref</i>[,<i>cellref2</i>,...])</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767396.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  DEPENDSON</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>FORMULAEXISTS</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Indicates whether the referenced cell contains a formula. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>FORMULAEXISTS (<i>cellref</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766035.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  FORMULAEXISTS</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>GETREF</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>References a cell and doesn't recalculate the formula when the referenced cell changes.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>GETREF(<i>cellname</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765642.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  GETREF</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>GETVAL</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Gets the value of a cell and doesn't recalculate the formula when the cell's value changes.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>GETVAL(<i>cellname</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765499.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  GETVAL</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>GUARD</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Protects <i>expression</i> from deletion and change by actions performed in the drawing window, for example, moving, sizing, grouping, or ungrouping shapes.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>GUARD(<i>expression</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766831.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  GUARD</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>LOCALFORMULAEXISTS</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Indicates whether the referenced cell contains a local formula. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>LOCALFORMULAEXISTS (<i>cellref</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765734.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  LOCALFORMULAEXISTS</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>SETATREF</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Redirects updated values resulting from actions in the user interface (UI) or Automation to another cell. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>SETATREF(<i>reference</i> [,<i>set_expression</i> [,<i>ignore_eval</i>]])</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765523.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  SETATREF</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>SETATREFEVAL</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Used in the <i>set_expression</i> parameter of the SETATREF function to indicate that <i>set_expression</i> should be evaluated before assigning  to the <i>reference</i> parameter in SETATREF.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>SETATREFEVAL(<i>expr</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767952.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  SETATREFEVAL</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>SETATREFEXPR</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Stores a value that is set through an action in the user interface (UI) or Automation.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>SETATREFEXPR ([<i>expr_opt</i>])</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768167.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  SETATREFEXPR</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>SETF</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Sets a cell's formula. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>SETF( GETREF(<i>cell</i>), <i>formula</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff769152.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  SETF</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>USE</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Applies the line pattern, fill pattern, or line end called <i>name</i> to the shape when placed in the LinePattern, FillPattern, BeginArrow, or EndArrow cell. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>USE("<i>name</i>")</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766094.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  USE</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+
+
+</table>
+
+<p class=MsoNormal><span style='font-size:9.0pt;line-height:107%;font-family:
+"Tahoma",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

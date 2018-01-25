@@ -1,0 +1,771 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Coordinate_Transformation.files/filelist.xml">
+ </head>
+
+<body lang=EN link="#0563C1" vlink="#954F72" style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN style='font-size:9.0pt;line-height:115%;
+font-family:"Tahoma",sans-serif;mso-ansi-language:EN'><a href="https://shapesheet-kb.github.io/">Main page</a> /<span style='mso-spacerun:yes'>  </span><span style='color:#333333'><a
+href="https://shapesheet-kb.github.io/en/index.htm">Useful info about ShapeSheet™</a></span> <span
+style='mso-spacerun:yes'> </span>/ <a
+href="https://msdn.microsoft.com/en-us/library/office/ff765103.aspx">Visio ShapeSheet reference</a>  / <a
+href="../Functions_by_category.htm">ShapeSheet™. List of functions by category </a><span style='mso-spacerun:yes'></span></p>
+
+
+  <table class=MsoNormalTable border=1 cellpadding=0 width="100%"
+   style='width:100.0%;border:none;border-bottom:solid #C8CDDE 1.0pt'>
+   <tr>
+    <td valign=top style='border:none;border-bottom:solid #D4DFFF 1.0pt;
+    padding:.75pt .75pt .75pt .75pt'>
+    <p class=MsoNormal style='margin:3.0pt'><b><span style='font-size:12pt;
+    line-height:115%;font-family:"Segoe UI","sans-serif";color:#003399'>Geometry functions</span></b></p>
+    </td>
+   </tr>
+  </table>
+  <br>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=756
+   style='width:566.9pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+   mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+
+   <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=756
+    style='width:566.9pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+    mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+    <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+     <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+     mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+     <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal'><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Name</span></p>
+     </td>
+     <td width=605 valign=top style='width:453.5pt;border:solid windowtext 1.0pt;
+     border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+     solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+     <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+     normal'><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Details</span></p>
+     </td>
+    </tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>ACOS</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the arccosine of number, for example, the angle whose cosine is <i>number</i>.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>ACOS(<i>number</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766959.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  ACOS</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>ANG360</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Normalizes an angle's range to be 0 &lt;= result &lt; 2PI radians (0 &lt;= result &lt; 360 degrees).</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>ANG360(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765606.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  ANG360</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>ASIN</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the arcsine of a number, for example, the angle whose sine is <i>number</i>.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>ASIN(<i>number</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767089.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  ASIN</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>ATAN</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the arctangent of a number, for example, the angle whose tangent is <i>number</i>. The resulting angle is in the range -PI/2 &lt;= angle &lt;= PI/2 radians (-90 &lt;= angle &lt;= 90 degrees).
+</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>ATAN(<i>number</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765431.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  ATAN</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>ATAN2</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the angle between the vector represented by <i>x,y</i> and the direction of the <i>x</i>-axis. The result is a number in the current unit of measure for angles.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>ATAN2(<i>y</i>,<i>x</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766345.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  ATAN2</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>BOUNDINGBOXDIST</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the measurement of the specified part of the shape's bounding box. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>BOUNDINGBOXDIST(<i>Index</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767293.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  BOUNDINGBOXDIST</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>BOUNDINGBOXRECT</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the coordinate of the specified edge of the shape's bounding box.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>BOUNDINGBOXRECT(<i>Index</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765536.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  BOUNDINGBOXRECT</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>COS</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the cosine of an angle. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>COS(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765786.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  COS</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>COSH</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the hyperbolic cosine of an angle.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>COSH(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766892.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  COSH</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>DEG</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Converts the value of an angle from radians to degrees.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>DEG(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768895.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  DEG</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>DISTTOPATH</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the shortest distance from the point represented by the specified coordinates to a point on the path.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>DISTTOPATH(<i>section</i>,<i>x</i>,<i>y</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765737.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  DISTTOPATH</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>GRAVITY</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Calculates a text block's correct angle of rotation for the indicated shape rotation to prevent the text from turning upside down.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>GRAVITY(<i>angle</i>,[<i>limit1</i>],[<i>limit2</i>])</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768565.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  GRAVITY</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>INTERSECTX</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the <i>x</i>-coordinate (in the local coordinate system) of the point where two lines intersect. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>INTERSECTX(<i>x1</i>,<i>y1</i>,<i>angle1</i>,<i>x2</i>,<i>y2</i>,<i>angle2</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768522.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  INTERSECTX</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>INTERSECTY</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the <i>y</i>-coordinate (in the local coordinate system) of the point where two lines intersect. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>INTERSECTX(<i>x1</i>,<i>y1</i>,<i>angle1</i>,<i>x2</i>,<i>y2</i>,<i>angle2</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767657.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  INTERSECTY</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>MAGNITUDE</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the magnitude of the vector whose rise is <i>A</i> and whose run is <i>B</i>, multiplied by the respective constants <i>constantA</i> and <i>constantB</i>. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>MAGNITUDE(<i>constantA</i>,<i>A</i>,<i>constantB</i>,<i>B</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767593.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  MAGNITUDE</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>NEARESTPOINTONPATH</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the percentage of the distance along the path of the point that is nearest to the specified coordinates, as a value between 0 and 1.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>NEARESTPOINTONPATH(<i>section</i>,<i>x</i>,<i>y</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766372.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  NEARESTPOINTONPATH</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>NURBS</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns a nonuniform rational B-spline (NURBS). This function is used in the E cell in the NURBSTo geometry rows.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>NURBS(<i>knotLast</i>, <i>degree</i>, <i>xType</i>, <i>yType</i>, <i>x1</i>, <i>y1</i>, <i>knot1</i>, <i>weight1</i>, ...)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768992.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  NURBS</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>PATHLENGTH</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the length of the path that is defined in the specified Geometry section.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>PATHLENGTH(<i>section</i><i>[,segment]</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766870.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  PATHLENGTH</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>PATHSEGMENT</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the 1-based segment number at the  specified percentage mark along the specified path.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>PATHSEGMENT(<i>section</i>,<i>travel</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765163.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  PATHSEGMENT</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>PI</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the mathematical constant <i>pi</i>, which is approximately 3.1415926535898.
+</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>PI( )</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765352.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  PI</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>POINTALONGPATH</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the coordinates of a point on, or offset from, the path.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>POINTALONGPATH(<i>section</i>,<i>travel</i><i>[,offset]</i><i>[,segment]</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767124.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  POINTALONGPATH</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>POLYLINE</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns a polyline. This function is used in the A cell of PolyLineTo geometry rows. </span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>POLYLINE(<i>xType</i>, <i>yType</i>, <i>x1</i>, <i>y1</i>...)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765292.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  POLYLINE</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>RAD</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Converts the value of an angle from degrees to radians.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>RAD(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff769053.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  RAD</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>RECTSECT</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Calculates the sector of a rectangle associated with <i>x</i> and <i>y</i> and returns an integer 0 to 4, indicating the sector.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>RECTSECT(<i>width</i>,<i>height</i>,<i>x</i>,<i>y</i>,<i>option</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768791.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  RECTSECT</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>SEGMENTCOUNT</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: 2010</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the number of line segments that make up the path.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>SEGMENTCOUNT(<i>pathRef</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff767018.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  SEGMENTCOUNT</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>SIN</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the sine of an angle.
+</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>SIN(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff766471.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  SIN</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>SINH</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the hyperbolic sine of an angle.
+</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>SINH(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768612.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  SINH</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>TAN</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the tangent of an angle.</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>TAN(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff768266.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  TAN</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+    <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes'>
+      <td width=151 valign=top style='width:113.35pt;border:solid windowtext 1.0pt;
+      border-top:none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+      padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif'>TANH</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><span class=SpellE><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'>Version</span></span><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:#2A2A2A'> <span
+      class=SpellE>Added</span>: Pre 2003</span></span><span style='font-size:9.0pt;
+      font-family:"Tahoma",sans-serif'></span></p>
+      </td>
+      <td width=605 valign=top style='width:453.55pt;border-top:none;border-left:
+      none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+      mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+      mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+      <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+      style='font-size:9.0pt;font-family:"Tahoma",sans-serif;color:black'>Returns the hyperbolic tangent of an angle.
+</span></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      10.0pt;font-family:"Tahoma",sans-serif;color:#003399'>Syntax</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><b><span style='font-size:
+      9.0pt;font-family:"Tahoma",sans-serif;color:black'>TANH(<i>angle</i>)</span></b></p>
+      <p class=MsoNormal style='mso-margin-top-alt:auto'><a
+      href="https://msdn.microsoft.com/en-us/library/office/ff765283.aspx"><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'>Read more about function  TANH</span></a><span style='font-size:9.0pt;font-family:"Tahoma",sans-serif'></span></p></td></tr>
+
+
+</table>
+
+<p class=MsoNormal><span style='font-size:9.0pt;line-height:107%;font-family:
+"Tahoma",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
