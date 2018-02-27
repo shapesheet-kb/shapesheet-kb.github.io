@@ -1,407 +1,4037 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
   <link rel="canonical" href="https://msdn.microsoft.com/en-us/library/aa342178(v=office.12).aspx" />
-    <title>DoCmd/DOCMD Commands [Visio 2007 SDK]</title>
+    <title>DoCmd/DOCMD Commands</title>
   </head>
     <body>
-    <h1><a href="https://msdn.microsoft.com/en-us/library/aa342178(v=office.12).aspx">DoCmd/DOCMD Commands [Visio 2007 SDK]</a></h1>
-      <p>The following table contains the list of supported commands for use with the DOCMD function (ShapeSheet interface) and the <strong class="bterm">DoCmd</strong> method (Automation interface), along with information about the contexts in which they are supported.</p>
-      <p>The DOCMD function takes a numeric argument only; the <strong class="bterm">DoCmd</strong> method takes either a constant or numeric value.</p>
-      <div class="tableSection">
-      <table Responsive="true" summary="table">
-			<tr Responsive="true"><th scope="col">Member of VisUICmds</th><th scope="col">Value</th><th scope="col">Automation </th><th scope="col">ShapeSheet </th></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAcquireImages</strong></p></td><td data-th="Value"><p>1868</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAlignBox</strong></p></td><td data-th="Value"><p>1768</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAlignObjectBottom</strong></p></td><td data-th="Value"><p>1201</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAlignObjectCenter</strong></p></td><td data-th="Value"><p>1197</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAlignObjectLeft</strong></p></td><td data-th="Value"><p>1196</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAlignObjectMiddle</strong></p></td><td data-th="Value"><p>1200</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong></strong></p></td><td data-th="Value"><p>1198</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAlignObjectTop</strong></p></td><td data-th="Value"><p>1199</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAppMaximize</strong></p></td><td data-th="Value"><p>1864</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAppMinimize</strong></p></td><td data-th="Value"><p>1865</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAppRestore</strong></p></td><td data-th="Value"><p>1904</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdAutoConnectToggle</strong></p></td><td data-th="Value"><p> 2091</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdBrowseSampleDrawings</strong></p></td><td data-th="Value"><p>1645</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdBullets</strong></p></td><td data-th="Value"><p>1633</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCancelInPlaceEditing</strong></p></td><td data-th="Value"><p>1602</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCenterDrawing</strong></p></td><td data-th="Value"><p>1202</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCloseWindow</strong></p></td><td data-th="Value"><p>1361</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdConnectorEffectCurved</strong></p></td><td data-th="Value"><p>1945</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdConnectorEffectRightAngle</strong></p></td><td data-th="Value"><p>1943</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdConnectorEffectStraight</strong></p></td><td data-th="Value"><p>1944</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCreateEditMaster</strong></p></td><td data-th="Value"><p>1899</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCreateNewDrawing</strong></p></td><td data-th="Value"><p>1812</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCropTool</strong></p></td><td data-th="Value"><p>1449</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCustomPropertySets</strong></p></td><td data-th="Value"><p>1675</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdCustProp</strong></p></td><td data-th="Value"><p>1658</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDataColumnSettingsDlg</strong></p></td><td data-th="Value"><p> 2043</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdDataExplorerWindow</strong></p></td><td data-th="Value"><p> 2044</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdDataRecordsetProperties</strong></p></td><td data-th="Value"><p> 2072</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdDataRefreshDlg</strong></p></td><td data-th="Value"><p> 2019</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdDataSelectorDlg</strong></p></td><td data-th="Value"><p> 2011</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdDecreaseIndent</strong></p></td><td data-th="Value"><p>1093</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDecreaseParaSpacing</strong></p></td><td data-th="Value"><p>1095</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDeleteBackWord</strong></p></td><td data-th="Value"><p>1905</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDeleteComment</strong></p></td><td data-th="Value"><p>1920</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDeleteForwardWord</strong></p></td><td data-th="Value"><p> 2114</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdDeselectAll</strong></p></td><td data-th="Value"><p>1213</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDesignMode</strong></p></td><td data-th="Value"><p>1388</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDetectAndRepair</strong></p></td><td data-th="Value"><p>1890</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeBottom</strong></p></td><td data-th="Value"><p>1238</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeCenter</strong></p></td><td data-th="Value"><p>1233</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeHSpace</strong></p></td><td data-th="Value"><p>1231</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeLeft</strong></p></td><td data-th="Value"><p>1232</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeMiddle</strong></p></td><td data-th="Value"><p>1237</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeRight</strong></p></td><td data-th="Value"><p>1234</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeTop</strong></p></td><td data-th="Value"><p>1236</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDistributeVSpace</strong></p></td><td data-th="Value"><p>1235</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDlgCustomFit</strong></p></td><td data-th="Value"><p>1536</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDrawFillStyle</strong></p></td><td data-th="Value"><p>1123</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDrawGlue</strong></p></td><td data-th="Value"><p>1125</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDrawingExplorer</strong></p></td><td data-th="Value"><p>1721</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDrawingTools</strong></p></td><td data-th="Value"><p>1946</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDrawLineStyle</strong></p></td><td data-th="Value"><p>1122</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDrawSnap</strong></p></td><td data-th="Value"><p>1124</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDrawZoom</strong></p></td><td data-th="Value"><p>1126</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRConnectionTool</strong></p></td><td data-th="Value"><p>1226</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRConnectorTool</strong></p></td><td data-th="Value"><p>1225</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRLineTool</strong></p></td><td data-th="Value"><p>1221</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDROvalTool</strong></p></td><td data-th="Value"><p>1224</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRPencilTool</strong></p></td><td data-th="Value"><p>1220</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRPointerTool</strong></p></td><td data-th="Value"><p>1219</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRQtrArcTool</strong></p></td><td data-th="Value"><p>1222</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRRectTool</strong></p></td><td data-th="Value"><p>1223</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRRotateTool</strong></p></td><td data-th="Value"><p>1228</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRSplineTool</strong></p></td><td data-th="Value"><p>1311</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDRTextTool</strong></p></td><td data-th="Value"><p>1227</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdDynamicGrid</strong></p></td><td data-th="Value"><p>1765</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditConvertObject</strong></p></td><td data-th="Value"><p>1439</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditFind</strong></p></td><td data-th="Value"><p>1043</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditInsertField</strong></p></td><td data-th="Value"><p>1032</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditInsertObject </strong></p></td><td data-th="Value"><p>1031</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditLinks </strong></p></td><td data-th="Value"><p>1030</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditOpenObject</strong></p></td><td data-th="Value"><p>1029</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditPasteLink</strong></p></td><td data-th="Value"><p>1028</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditPasteSpecial </strong></p></td><td data-th="Value"><p>1027</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditRedo</strong></p></td><td data-th="Value"><p>1018</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditRepeat</strong></p></td><td data-th="Value"><p>1019</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditReplace</strong></p></td><td data-th="Value"><p>1179</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditSelectSpecial</strong></p></td><td data-th="Value"><p>1026</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEditUndo</strong></p></td><td data-th="Value"><p>1017</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdEmailRouting</strong></p></td><td data-th="Value"><p>1588</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdExportDatabaseAddon</strong></p></td><td data-th="Value"><p>1891</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileCheckin</strong></p></td><td data-th="Value"><p>1787</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileCheckout</strong></p></td><td data-th="Value"><p>1788</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileChooseTemplates</strong></p></td><td data-th="Value"><p>1583</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileClose</strong></p></td><td data-th="Value"><p>1003</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileExit</strong></p></td><td data-th="Value"><p>1016</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileImport</strong></p></td><td data-th="Value"><p>1007</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile1</strong></p></td><td data-th="Value"><p>1012</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile2</strong></p></td><td data-th="Value"><p>1013</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile3</strong></p></td><td data-th="Value"><p>1014</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile4</strong></p></td><td data-th="Value"><p>1015</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile5</strong></p></td><td data-th="Value"><p>1561</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile6</strong></p></td><td data-th="Value"><p>1569</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile7</strong></p></td><td data-th="Value"><p>1570</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile8</strong></p></td><td data-th="Value"><p>1571</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileLastFile9</strong></p></td><td data-th="Value"><p>1572</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNew</strong></p></td><td data-th="Value"><p>1001</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNewBlankDrawing</strong></p></td><td data-th="Value"><p>1579</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNewBlankDrawingMetric</strong></p></td><td data-th="Value"><p>1671</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNewBlankDrawingUS</strong></p></td><td data-th="Value"><p>1672</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNewBlankStencil</strong></p></td><td data-th="Value"><p>1582</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNewBlankStencilMetric</strong></p></td><td data-th="Value"><p>1673</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNewBlankStencilUS</strong></p></td><td data-th="Value"><p>1674</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileNewStencilDlg</strong></p></td><td data-th="Value"><p>1580</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileOpen</strong></p></td><td data-th="Value"><p>1002</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileOpenStencil</strong></p></td><td data-th="Value"><p>1442</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFilePrint  </strong></p></td><td data-th="Value"><p>1010</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileSave</strong></p></td><td data-th="Value"><p>1004</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileSaveAs</strong></p></td><td data-th="Value"><p>1005</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileSaveAsWebPage</strong></p></td><td data-th="Value"><p>1785</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileSaveWorkspace</strong></p></td><td data-th="Value"><p>1006</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFileSummaryInfoDlg </strong></p></td><td data-th="Value"><p>1009</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFirstTile</strong></p></td><td data-th="Value"><p>1515</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFitCurve</strong></p></td><td data-th="Value"><p>1538</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatAllTextProps</strong></p></td><td data-th="Value"><p>1642</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatBehavior </strong></p></td><td data-th="Value"><p>1071</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatBlock</strong></p></td><td data-th="Value"><p>1070</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatCorners</strong></p></td><td data-th="Value"><p>1334</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatCustPropDef</strong></p></td><td data-th="Value"><p>1687</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatCustPropEdit</strong></p></td><td data-th="Value"><p>1312</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatDefineStyles</strong></p></td><td data-th="Value"><p>1064</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatDoubleClick</strong></p></td><td data-th="Value"><p>1118</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatFill</strong></p></td><td data-th="Value"><p>1066</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatInkDialog</strong></p></td><td data-th="Value"><p>1955</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatLine</strong></p></td><td data-th="Value"><p>1065</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatPainter</strong></p></td><td data-th="Value"><p>1271</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatParagraph</strong></p></td><td data-th="Value"><p>1068</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatProtection</strong></p></td><td data-th="Value"><p>1072</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatShadow</strong></p></td><td data-th="Value"><p>1333</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatSpecial</strong></p></td><td data-th="Value"><p>1073</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatStyle</strong></p></td><td data-th="Value"><p>1063</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatTabs</strong></p></td><td data-th="Value"><p>1069</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFormatText </strong></p></td><td data-th="Value"><p>1067</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdFullScreenMode</strong></p></td><td data-th="Value"><p>1492</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdGoToPageToolbar</strong></p></td><td data-th="Value"><p>1635</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdGrid</strong></p></td><td data-th="Value"><p>1767</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdGuides</strong></p></td><td data-th="Value"><p>1771</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHeaderFooter</strong></p></td><td data-th="Value"><p>1720</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHelpAboutVisio</strong></p></td><td data-th="Value"><p>1100</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHelpContents</strong></p></td><td data-th="Value"><p>1092</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHelpMode</strong></p></td><td data-th="Value"><p>1386</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHelpSearch</strong></p></td><td data-th="Value"><p>1809</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHelpShapeBasics</strong></p></td><td data-th="Value"><p>1822</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHelpTemplates</strong></p></td><td data-th="Value"><p>1586</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHideAllToolbars</strong></p></td><td data-th="Value"><p>1726</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdHideDocumentStencil</strong></p></td><td data-th="Value"><p>1689</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdImageProperties</strong></p></td><td data-th="Value"><p>1887</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdImagePropertiesDlg</strong></p></td><td data-th="Value"><p>1883</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdIncreaseIndent</strong></p></td><td data-th="Value"><p>1094</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdIncreaseParaSpacing</strong></p></td><td data-th="Value"><p>1096</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETAddToFavorites</strong></p></td><td data-th="Value"><p>1506</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETDiagrammingResources</strong></p></td><td data-th="Value"><p>1606</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETEditHyperlink</strong></p></td><td data-th="Value"><p>1619</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETGoBack</strong></p></td><td data-th="Value"><p>1599</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETGoForward</strong></p></td><td data-th="Value"><p>1598</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETKnowledgeBase</strong></p></td><td data-th="Value"><p>1605</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETOpenHLinkNewWnd</strong></p></td><td data-th="Value"><p>1608</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETVisioHomePage</strong></p></td><td data-th="Value"><p>1596</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETVisioOnTheWeb</strong></p></td><td data-th="Value"><p>1831</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdINETVisioSolutionsLibrary</strong></p></td><td data-th="Value"><p>1604</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInkCustomizePen</strong></p></td><td data-th="Value"><p>1664</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInkEraser</strong></p></td><td data-th="Value"><p>1970</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInkReviewPen</strong></p></td><td data-th="Value"><p>1971</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInkTool</strong></p></td><td data-th="Value"><p>1661</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertAutoCADAddOn</strong></p></td><td data-th="Value"><p>1521</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertClipArt</strong></p></td><td data-th="Value"><p>1497</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertComment</strong></p></td><td data-th="Value"><p>1501</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertControlDlg</strong></p></td><td data-th="Value"><p>1522</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertDataMap</strong></p></td><td data-th="Value"><p>1282</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertHyperLink </strong></p></td><td data-th="Value"><p>1585</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertMicrosoftGraph</strong></p></td><td data-th="Value"><p>1499</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertTextBox</strong></p></td><td data-th="Value"><p>2006</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertVertTextBox</strong></p></td><td data-th="Value"><p>2007</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdInsertWordArt</strong></p></td><td data-th="Value"><p>1498</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdIntersect</strong></p></td><td data-th="Value"><p>1453</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdJoin</strong></p></td><td data-th="Value"><p>1533</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdLastTile</strong></p></td><td data-th="Value"><p>1516</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdLayerDlg</strong></p></td><td data-th="Value"><p>1446</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdLayerSetupDlg</strong></p></td><td data-th="Value"><p>1448</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdLayoutDynamic</strong></p></td><td data-th="Value"><p>1493</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMasterExplorer</strong></p></td><td data-th="Value"><p>1916</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMasterSetup</strong></p></td><td data-th="Value"><p>1343</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMDIMaximize</strong></p></td><td data-th="Value"><p>1901</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMDIMinimize</strong></p></td><td data-th="Value"><p>1902</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMDIRestore</strong></p></td><td data-th="Value"><p>1903</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMsoAutoCorrect</strong></p></td><td data-th="Value"><p>1872</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMsoAutoCorrectDlg</strong></p></td><td data-th="Value"><p>1866</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMsoAutoFormat</strong></p></td><td data-th="Value"><p>1873</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMsoCustomItem</strong></p></td><td data-th="Value"><p>1896</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMSOInsertEquation</strong></p></td><td data-th="Value"><p>1646</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMSOInsertSymbol</strong></p></td><td data-th="Value"><p>1504</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdMsoMediaGallery</strong></p></td><td data-th="Value"><p>1885</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdNewDefDocBlankDrawing</strong></p></td><td data-th="Value"><p>1906</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdNewFromExisting</strong></p></td><td data-th="Value"><p>1897</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdNextMarkup</strong></p></td><td data-th="Value"><p>1914</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdNextTile</strong></p></td><td data-th="Value"><p>1514</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdNextWindow</strong></p></td><td data-th="Value"><p>1886</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectAddToGroup</strong></p></td><td data-th="Value"><p>1053</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectAlignObjects</strong></p></td><td data-th="Value"><p>1049</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectBringForward</strong></p></td><td data-th="Value"><p>1045</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectBringToFront</strong></p></td><td data-th="Value"><p>1046</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectCombine</strong></p></td><td data-th="Value"><p>1061</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectConnectObjects</strong></p></td><td data-th="Value"><p>1050</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectConvertToGroup</strong></p></td><td data-th="Value"><p>1055</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectDistributeDlg</strong></p></td><td data-th="Value"><p>1230</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectFlipHorizontal</strong></p></td><td data-th="Value"><p>1058</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectFlipVertical </strong></p></td><td data-th="Value"><p>1057</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectFragment</strong></p></td><td data-th="Value"><p>1062</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectGroup</strong></p></td><td data-th="Value"><p>1051</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectHelp</strong></p></td><td data-th="Value"><p>1428</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectInfoDlg</strong></p></td><td data-th="Value"><p>1425</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectRemoveFromGroup</strong></p></td><td data-th="Value"><p>1054</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectReverse</strong></p></td><td data-th="Value"><p>1059</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectRotate90</strong></p></td><td data-th="Value"><p>1056</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectSendBackward</strong></p></td><td data-th="Value"><p>1047</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectSendToBack</strong></p></td><td data-th="Value"><p>1048</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectSwapEnds</strong></p></td><td data-th="Value"><p>1870</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectUngroup</strong></p></td><td data-th="Value"><p>1052</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdObjectUnion</strong></p></td><td data-th="Value"><p>1060</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOfficeDiagnostics</strong></p></td><td data-th="Value"><p>1890</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdOpenActiveObject</strong></p></td><td data-th="Value"><p>1601</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOpenCommentForEdit</strong></p></td><td data-th="Value"><p>1503</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOpenInVisio</strong></p></td><td data-th="Value"><p>1491</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsColorPaletteDlg</strong></p></td><td data-th="Value"><p>1082</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsDeletePages</strong></p></td><td data-th="Value"><p>1079</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsEditBackground</strong></p></td><td data-th="Value"><p>1075</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsEditDrawing</strong></p></td><td data-th="Value"><p>1074</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsGoToDrawing </strong></p></td><td data-th="Value"><p>1077</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsNewPage</strong></p></td><td data-th="Value"><p>1078</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsPageSetup</strong></p></td><td data-th="Value"><p>1076</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsPreferences</strong></p></td><td data-th="Value"><p>1081</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsProtectDocument</strong></p></td><td data-th="Value"><p>1083</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsReorderPages</strong></p></td><td data-th="Value"><p>1080</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdOptionsSnapGlueSetup </strong></p></td><td data-th="Value"><p>1084</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdPageMeasureUnitsDlg</strong></p></td><td data-th="Value"><p>1274</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdPanZoom</strong></p></td><td data-th="Value"><p>1653</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdPauseRecordingMacro</strong></p></td><td data-th="Value"><p>1778</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdPreviousMarkup</strong></p></td><td data-th="Value"><p>1915</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdPreviousTile</strong></p></td><td data-th="Value"><p>1513</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdPrintPage</strong></p></td><td data-th="Value"><p>1443</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdPrintPreview</strong></p></td><td data-th="Value"><p>1490</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdProgRefHelp</strong></p></td><td data-th="Value"><p>1584</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRecalcObjectWH</strong></p></td><td data-th="Value"><p>1146</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRecordNewMacro</strong></p></td><td data-th="Value"><p>1775</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRemoveVBAFromActiveDoc</strong></p></td><td data-th="Value"><p>1590</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdResearchLookUp</strong></p></td><td data-th="Value"><p>1967</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdResearchTranslate</strong></p></td><td data-th="Value"><p>1968</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdResumeRecordingMacro</strong></p></td><td data-th="Value"><p>1779</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdReviewerVisibilityAll</strong></p></td><td data-th="Value"><p>1836</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdReviewerVisibilityNone</strong></p></td><td data-th="Value"><p>1919</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdRHIDlg</strong></p></td><td data-th="Value"><p>2009</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRotate90Clockwise</strong></p></td><td data-th="Value"><p>1494</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRulerGridDlg</strong></p></td><td data-th="Value"><p>1318</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRulSub</strong></p></td><td data-th="Value"><p>1766</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRunAddOnDlg</strong></p></td><td data-th="Value"><p>1484</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdRunAddonMenu</strong></p></td><td data-th="Value"><p>1090</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdSaveAsFixedFormatDlg</strong></p></td><td data-th="Value"><p>2117</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSelectionModeExtend</strong></p></td><td data-th="Value"><p>1909</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSelectionModeLasso</strong></p></td><td data-th="Value"><p>1908</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSelectionModeRect</strong></p></td><td data-th="Value"><p>1907</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSendAsMail</strong></p></td><td data-th="Value"><p>1292</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSendToExchange</strong></p></td><td data-th="Value"><p>1589</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetAddMarkup</strong></p></td><td data-th="Value"><p>1744</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetCharSizeDown</strong></p></td><td data-th="Value"><p>1406</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetCharSizeUp</strong></p></td><td data-th="Value"><p>1405</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnAppearanceCurved</strong></p></td><td data-th="Value"><p>1895</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnAppearanceDefault</strong></p></td><td data-th="Value"><p>1893</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnAppearanceStraight</strong></p></td><td data-th="Value"><p>1894</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_2pt</strong></p></td><td data-th="Value"><p>1713</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_3pt</strong></p></td><td data-th="Value"><p>1714</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_4pt</strong></p></td><td data-th="Value"><p>1715</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_5pt</strong></p></td><td data-th="Value"><p>1716</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_6pt</strong></p></td><td data-th="Value"><p>1717</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_Arc</strong></p></td><td data-th="Value"><p>1709</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_Gap</strong></p></td><td data-th="Value"><p>1710</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_Page</strong></p></td><td data-th="Value"><p>1708</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_Square</strong></p></td><td data-th="Value"><p>1711</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnLineJumpStyle_Triangle</strong></p></td><td data-th="Value"><p>1712</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnRerouteAsNeeded</strong></p></td><td data-th="Value"><p>1697</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnRerouteFreely</strong></p></td><td data-th="Value"><p>1696</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnRerouteNever</strong></p></td><td data-th="Value"><p>1698</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnRerouteOnCrossover</strong></p></td><td data-th="Value"><p>1837</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetDynConnRoutingStyle</strong></p></td><td data-th="Value"><p>1700</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetLanguageDlg</strong></p></td><td data-th="Value"><p>1888</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetPageLineJumpCode_Horz</strong></p></td><td data-th="Value"><p>1705</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetPageLineJumpCode_Last</strong></p></td><td data-th="Value"><p>1707</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetPageLineJumpCode_None</strong></p></td><td data-th="Value"><p>1704</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetPageLineJumpCode_Vert</strong></p></td><td data-th="Value"><p>1706</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSetPagePlow</strong></p></td><td data-th="Value"><p>1699</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeCommentDelete</strong></p></td><td data-th="Value"><p>1688</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeCommentDlg</strong></p></td><td data-th="Value"><p>1685</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeExplorer</strong></p></td><td data-th="Value"><p>1389</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeGeo</strong></p></td><td data-th="Value"><p>1769</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeHand</strong></p></td><td data-th="Value"><p>1772</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeIntersect</strong></p></td><td data-th="Value"><p>1830</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeLayerToolbar</strong></p></td><td data-th="Value"><p>1634</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeStudioAddOn</strong></p></td><td data-th="Value"><p>1985</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapesWindow</strong></p></td><td data-th="Value"><p>1669</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeTransparencyDlg</strong></p></td><td data-th="Value"><p>1874</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdShapeVert</strong></p></td><td data-th="Value"><p>1773</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSizePos</strong></p></td><td data-th="Value"><p>1670</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSpellingChange</strong></p></td><td data-th="Value"><p>1889</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdSpellingOptionsDlg</strong></p></td><td data-th="Value"><p>2042</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStampTool</strong></p></td><td data-th="Value"><p>1424</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStartRecordingMacro</strong></p></td><td data-th="Value"><p>1776</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenAutoArrange</strong></p></td><td data-th="Value"><p>1483</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenCleanup</strong></p></td><td data-th="Value"><p>1106</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenEditDrawing</strong></p></td><td data-th="Value"><p>1102</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenEditIcon</strong></p></td><td data-th="Value"><p>1101</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenIconAndDetail</strong></p></td><td data-th="Value"><p>1892</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenIconAndName</strong></p></td><td data-th="Value"><p>1480</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenIconOnly</strong></p></td><td data-th="Value"><p>1481</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenImageMaster</strong></p></td><td data-th="Value"><p>1105</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenNameMaster</strong></p></td><td data-th="Value"><p>1103</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenNameOnly</strong></p></td><td data-th="Value"><p>1482</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenNamesUnderIcons</strong></p></td><td data-th="Value"><p>2005</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStenNewMaster</strong></p></td><td data-th="Value"><p>1104</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdStopRecordingMacro</strong></p></td><td data-th="Value"><p>1777</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdSubtract</strong></p></td><td data-th="Value"><p>1454</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskPane</strong></p></td><td data-th="Value"><p> 1896</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskPaneDataGraphic </strong></p></td><td data-th="Value"><p>2024</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskPaneDocumentManagement</strong></p></td><td data-th="Value"><p>1972</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskPaneResearch </strong></p></td><td data-th="Value"><p>1969</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskPaneReviewer </strong></p></td><td data-th="Value"><p>1939</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskPaneThemeColors </strong></p></td><td data-th="Value"><p>2054</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskPaneThemeEffects</strong></p></td><td data-th="Value"><p>2055</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTaskTogglePreviewSize</strong></p></td><td data-th="Value"><p>2053</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextAllCaps</strong></p></td><td data-th="Value"><p>1862</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextBlockTool</strong></p></td><td data-th="Value"><p>1451</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextBold</strong></p></td><td data-th="Value"><p>1131</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextDoubleStrikeThrough</strong></p></td><td data-th="Value"><p>1951</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextDoubleULine</strong></p></td><td data-th="Value"><p>1863</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextEditRuler</strong></p></td><td data-th="Value"><p>1810</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextEditState</strong></p></td><td data-th="Value"><p>1214</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextHAlignCenter</strong></p></td><td data-th="Value"><p>1408</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextHAlignDistribute</strong></p></td><td data-th="Value"><p>1952</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextHAlignJustify</strong></p></td><td data-th="Value"><p>1412</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextHAlignLeft</strong></p></td><td data-th="Value"><p>1407</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextHAlignRight</strong></p></td><td data-th="Value"><p>1409</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextItalic</strong></p></td><td data-th="Value"><p>1132</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextRotate90</strong></p></td><td data-th="Value"><p>1098</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextSmallCaps</strong></p></td><td data-th="Value"><p>1133</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextStrikeThrough</strong></p></td><td data-th="Value"><p>1741</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextSubscript</strong></p></td><td data-th="Value"><p>1135</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextSuperScript</strong></p></td><td data-th="Value"><p>1134</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextULine</strong></p></td><td data-th="Value"><p>1136</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextVAlignBottom</strong></p></td><td data-th="Value"><p>1422</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextVAlignMiddle</strong></p></td><td data-th="Value"><p>1414</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTextVAlignTop</strong></p></td><td data-th="Value"><p>1413</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdToggleDocumentStencil</strong></p></td><td data-th="Value"><p>1690</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolbarMSOffice </strong></p></td><td data-th="Value"><p>1505</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolbarsDlg</strong></p></td><td data-th="Value"><p>1500</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolsArrayShapesAddOn</strong></p></td><td data-th="Value"><p>1354</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolsInventory</strong></p></td><td data-th="Value"><p>1335</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolsLayoutShapesDlg</strong></p></td><td data-th="Value"><p>1574</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-				<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolsMacroDlg</strong></p></td><td data-th="Value"><p>1577</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolSnapLines</strong></p></td><td data-th="Value"><p>1807</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolsRunVBE</strong></p></td><td data-th="Value"><p>1576</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdToolsSpelling</strong></p></td><td data-th="Value"><p>1270</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTrim</strong></p></td><td data-th="Value"><p>1534</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTrustCenterDlg</strong></p></td><td data-th="Value"><p>2104</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdTurnToNextPage</strong></p></td><td data-th="Value"><p>1148</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdTurnToPrevPage</strong></p></td><td data-th="Value"><p>1147</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdUFEditClear</strong></p></td><td data-th="Value"><p>1023</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdUFEditCopy</strong></p></td><td data-th="Value"><p>1021</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdUFEditCut</strong></p></td><td data-th="Value"><p>1020</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdUFEditDuplicate</strong></p></td><td data-th="Value"><p>1024</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdUFEditPaste</strong></p></td><td data-th="Value"><p>1022</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdUFEditSelectAll</strong></p></td><td data-th="Value"><p>1025</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-
-
-
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdView100</strong></p></td><td data-th="Value"><p>1035</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdView150</strong></p></td><td data-th="Value"><p>1036</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdView200</strong></p></td><td data-th="Value"><p>1037</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdView400</strong></p></td><td data-th="Value"><p>1280</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdView50</strong></p></td><td data-th="Value"><p>1279</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdView75</strong></p></td><td data-th="Value"><p>1034</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewConnections</strong></p></td><td data-th="Value"><p>1042</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewCustom </strong></p></td><td data-th="Value"><p>1038</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>Yes</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewFitInWindow</strong></p></td><td data-th="Value"><p>1033</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewGrid</strong></p></td><td data-th="Value"><p>1040</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewGuides</strong></p></td><td data-th="Value"><p>1041</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewLeftToRight</strong></p></td><td data-th="Value"><p>2013</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewPageBreaks</strong></p></td><td data-th="Value"><p>1509</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewRightToLeft</strong></p></td><td data-th="Value"><p>2014</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr><tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewRulers</strong></p></td><td data-th="Value"><p>1039</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdViewStatusBar</strong></p></td><td data-th="Value"><p>1044</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdWindowCascadeAll</strong></p></td><td data-th="Value"><p>1086</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdWindowNewWindow</strong></p></td><td data-th="Value"><p>1085</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdWindowShowDrawPage</strong></p></td><td data-th="Value"><p>1091</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdWindowShowMasterObjects</strong></p></td><td data-th="Value"><p>1089</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdWindowShowShapeSheet </strong></p></td><td data-th="Value"><p>1088</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdWindowTileAll</strong></p></td><td data-th="Value"><p>1087</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomIn</strong></p></td><td data-th="Value"><p>1216</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomInIgnoreSel</strong></p></td><td data-th="Value"><p>1917</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomLast</strong></p></td><td data-th="Value"><p>1495</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomOut</strong></p></td><td data-th="Value"><p>1217</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomOutIgnoreSel</strong></p></td><td data-th="Value"><p>1918</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomPageWidth</strong></p></td><td data-th="Value"><p>1496</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomPt</strong></p></td><td data-th="Value"><p>1215</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-			<tr><td data-th="Member of VisUICmds"><p><strong>visCmdZoomSingleTile</strong></p></td><td data-th="Value"><p>1512</p></td><td data-th="Automation "><p>Yes</p></td><td data-th="ShapeSheet "><p>No</p></td></tr>
-		</table>
-    <p><a>© Microsoft Corporation. All rights reserved</a></span></p>
+<h1><a href="https://github.com/OfficeDev/VBA-content/blob/master/VBA/Visio-VBA/articles/docmd-docmd-commands.md#docmddocmd-commands" aria-hidden="true" class="anchor" id="user-content-docmddocmd-commands"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>DoCmd/DOCMD Commands</h1>
+<p>The following table contains the list of supported commands for use with the DOCMD function (ShapeSheet interface) and the  <strong>DoCmd</strong> method (Automation interface), along with information about the contexts in which they are supported.</p>
+<p>The DOCMD function takes a numeric argument only; the  <strong>DoCmd</strong> method takes either a constant or numeric value.</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Member of VisUICmds</strong></th>
+<th align="left"><strong>Value</strong></th>
+<th align="left"><strong>Automation</strong></th>
+<th align="left"><strong>ShapeSheet</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>visCmdABarAutoHeight</strong></td>
+<td align="left">1684</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdABarAutohide</strong></td>
+<td align="left">1652</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdABarHide</strong></td>
+<td align="left">1650</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdABarToggleFloat</strong></td>
+<td align="left">1651</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAcquireImages</strong></td>
+<td align="left">1868</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAddConnectPt</strong></td>
+<td align="left">1263</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAddControlPt</strong></td>
+<td align="left">1266</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAddDataRecordset</strong></td>
+<td align="left">1998</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAddMemberToContainer</strong></td>
+<td align="left">2173</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAddTextShape</strong></td>
+<td align="left">1181</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAddToAllContainers</strong></td>
+<td align="left">2251</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAddToNewContainer</strong></td>
+<td align="left">2268</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAlignBox</strong></td>
+<td align="left">1768</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAlignObjectBottom</strong></td>
+<td align="left">1201</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAlignObjectCenter</strong></td>
+<td align="left">1197</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAlignObjectLeft</strong></td>
+<td align="left">1196</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAlignObjectMiddle</strong></td>
+<td align="left">1200</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAlignObjectRight</strong></td>
+<td align="left">1198</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAlignObjectTop</strong></td>
+<td align="left">1199</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAllowThemes</strong></td>
+<td align="left">2056</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyDataGraphic</strong></td>
+<td align="left">2017</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyDataGraphicAfterLink</strong></td>
+<td align="left">2092</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyMainTheme</strong></td>
+<td align="left">2285</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyMainThemeToDocument</strong></td>
+<td align="left">2296</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyMainThemeToPage</strong></td>
+<td align="left">2289</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyThemeColors</strong></td>
+<td align="left">2188</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyThemeEffects</strong></td>
+<td align="left">2189</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyThemeToDoc</strong></td>
+<td align="left">2048</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyThemeToNewShapesToggle</strong></td>
+<td align="left">2297</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdApplyThemeToPage</strong></td>
+<td align="left">2047</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAppMaximize</strong></td>
+<td align="left">1864</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAppMinimize</strong></td>
+<td align="left">1865</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAppRestore</strong></td>
+<td align="left">1904</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAssociateCallout</strong></td>
+<td align="left">2287</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAutoAlign</strong></td>
+<td align="left">2223</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAutoAlignAndSpace</strong></td>
+<td align="left">2222</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAutoConnectToggle</strong></td>
+<td align="left">2091</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAutoGenerateDataGraphics</strong></td>
+<td align="left">2105</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdAutoSpace</strong></td>
+<td align="left">2224</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdBreakOLELink</strong></td>
+<td align="left">1900</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdBrowseSampleDrawings</strong></td>
+<td align="left">1645</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdBullets</strong></td>
+<td align="left">1633</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCancelInPlaceEditing</strong></td>
+<td align="left">1602</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCenterDrawing</strong></td>
+<td align="left">1202</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCloseInkToolsRibbonTab</strong></td>
+<td align="left">2213</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCloseWindow</strong></td>
+<td align="left">1361</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCollapseShapesWindow</strong></td>
+<td align="left">2269</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdConnectorEffectCurved</strong></td>
+<td align="left">1945</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdConnectorEffectRightAngle</strong></td>
+<td align="left">1943</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdConnectorEffectStraight</strong></td>
+<td align="left">1944</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdConnPoints</strong></td>
+<td align="left">1774</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdContainerNoHeadingToggle</strong></td>
+<td align="left">2315</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdContainerAutoResizeExpandContract</strong></td>
+<td align="left">2349</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdContainerAutoResizeExpandOnly</strong></td>
+<td align="left">2348</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdContainerAutoResizeOff</strong></td>
+<td align="left">2347</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCreateEditMaster</strong></td>
+<td align="left">1899</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCreateNewDrawing</strong></td>
+<td align="left">1812</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCreateShortcut</strong></td>
+<td align="left">1791</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCropObject</strong></td>
+<td align="left">1192</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCropTool</strong></td>
+<td align="left">1449</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCustomPropertySets</strong></td>
+<td align="left">1675</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCustProp</strong></td>
+<td align="left">1658</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdCustPropDefine</strong></td>
+<td align="left">1695</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataAutoConnect</strong></td>
+<td align="left">2098</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataAutoLink</strong></td>
+<td align="left">2046</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataAutoLinkWiz</strong></td>
+<td align="left">2045</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataColumnSettingsDlg</strong></td>
+<td align="left">2043</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataExplorerWindow</strong></td>
+<td align="left">2044</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRecordsetProperties</strong></td>
+<td align="left">2072</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRecordsetSetCommand</strong></td>
+<td align="left">2037</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRecordsetSetPrimaryKey</strong></td>
+<td align="left">2038</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRefresh</strong></td>
+<td align="left">2021</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRefreshAddConflict</strong></td>
+<td align="left">2094</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRefreshConfigDlg</strong></td>
+<td align="left">2022</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRefreshDeleteConflict</strong></td>
+<td align="left">2095</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRefreshDlg</strong></td>
+<td align="left">2019</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataRefreshResolveConflict</strong></td>
+<td align="left">2103</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataSelectorDlg</strong></td>
+<td align="left">2011</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataUnlinkRow</strong></td>
+<td align="left">2058</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDataUnlinkShape</strong></td>
+<td align="left">2057</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDecreaseIndent</strong></td>
+<td align="left">1093</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDecreaseParaSpacing</strong></td>
+<td align="left">1095</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDelConnectPt</strong></td>
+<td align="left">1265</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeleteBackWord</strong></td>
+<td align="left">1905</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeleteComment</strong></td>
+<td align="left">1920</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeleteConnectors</strong></td>
+<td align="left">2199</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeleteDataGraphic</strong></td>
+<td align="left">2067</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeleteDataRecordset</strong></td>
+<td align="left">1999</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeleteForwardWord</strong></td>
+<td align="left">2114</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeleteTheme</strong></td>
+<td align="left">2052</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDeselectAll</strong></td>
+<td align="left">1213</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDesignMode</strong></td>
+<td align="left">1388</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDetectAndRepair</strong></td>
+<td align="left">1890</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDiagramFlipHorizontal</strong></td>
+<td align="left">2229</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDiagramFlipVertical</strong></td>
+<td align="left">2228</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDiagramGallery</strong></td>
+<td align="left">1982</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDiagramRotateLeft</strong></td>
+<td align="left">2227</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDiagramRotateRight</strong></td>
+<td align="left">2226</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDisbandContainer</strong></td>
+<td align="left">2204</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeBottom</strong></td>
+<td align="left">1238</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeCenter</strong></td>
+<td align="left">1233</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeHSpace</strong></td>
+<td align="left">1231</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeLeft</strong></td>
+<td align="left">1232</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeMiddle</strong></td>
+<td align="left">1237</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeRight</strong></td>
+<td align="left">1234</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeTop</strong></td>
+<td align="left">1236</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDistributeVSpace</strong></td>
+<td align="left">1235</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDlgCustomFit</strong></td>
+<td align="left">1536</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDragDuplicate</strong></td>
+<td align="left">1184</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawFillStyle</strong></td>
+<td align="left">1123</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawGlue</strong></td>
+<td align="left">1125</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawAddGuide</strong></td>
+<td align="left">1180</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawingExplorer</strong></td>
+<td align="left">1721</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawingTools</strong></td>
+<td align="left">1946</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawLineStyle</strong></td>
+<td align="left">1122</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawOval</strong></td>
+<td align="left">1183</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawSnap</strong></td>
+<td align="left">1124</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawRect</strong></td>
+<td align="left">1182</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawRegion</strong></td>
+<td align="left">1742</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawTextStyle</strong></td>
+<td align="left">1121</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDrawZoom</strong></td>
+<td align="left">1126</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRConnectionTool</strong></td>
+<td align="left">1226</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRConnectorTool</strong></td>
+<td align="left">1225</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRLineTool</strong></td>
+<td align="left">1221</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropAndContain</strong></td>
+<td align="left">2172</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropAndInsertIntoList</strong></td>
+<td align="left">2196</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropCallout</strong></td>
+<td align="left">2286</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropManyOnPage</strong></td>
+<td align="left">1869</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropManyLinked</strong></td>
+<td align="left">2108</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropOnPage</strong></td>
+<td align="left">1246</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropOnStencil</strong></td>
+<td align="left">1244</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDropOnText</strong></td>
+<td align="left">1243</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDROvalTool</strong></td>
+<td align="left">1224</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRPencilTool</strong></td>
+<td align="left">1220</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRPointerTool</strong></td>
+<td align="left">1219</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRQtrArcTool</strong></td>
+<td align="left">1222</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRRectTool</strong></td>
+<td align="left">1223</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRRotateTool</strong></td>
+<td align="left">1228</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRSplineTool</strong></td>
+<td align="left">1311</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDRTextTool</strong></td>
+<td align="left">1227</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDuplicateDataGraphic</strong></td>
+<td align="left">2106</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDuplicateTheme</strong></td>
+<td align="left">2050</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditUndoMultiple</strong></td>
+<td align="left">1682</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDynamicGrid</strong></td>
+<td align="left">1765</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdDynConnReroute</strong></td>
+<td align="left">1829</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditConvertObject</strong></td>
+<td align="left">1439</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditFind</strong></td>
+<td align="left">1043</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditInsertField</strong></td>
+<td align="left">1032</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditInsertObject</strong></td>
+<td align="left">1031</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditLinks</strong></td>
+<td align="left">1030</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditOpenObject</strong></td>
+<td align="left">1029</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditPasteLink</strong></td>
+<td align="left">1028</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditPasteSpecial</strong></td>
+<td align="left">1027</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditRedo</strong></td>
+<td align="left">1018</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditRedoMultiple</strong></td>
+<td align="left">1683</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditRedoOrRepeat</strong></td>
+<td align="left">2295</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditRepeat</strong></td>
+<td align="left">1019</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditReplace</strong></td>
+<td align="left">1179</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditSelectSpecial</strong></td>
+<td align="left">1026</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditTheme</strong></td>
+<td align="left">2049</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditThemeColors</strong></td>
+<td align="left">2190</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditThemeEffects</strong></td>
+<td align="left">2191</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdEditUndo</strong></td>
+<td align="left">1017</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdExportDatabaseAddon</strong></td>
+<td align="left">1891</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileCheckin</strong></td>
+<td align="left">1787</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileCheckout</strong></td>
+<td align="left">1788</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileChooseTemplates</strong></td>
+<td align="left">1583</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileClose</strong></td>
+<td align="left">1003</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileExit</strong></td>
+<td align="left">1016</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileImport</strong></td>
+<td align="left">1007</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile1</strong></td>
+<td align="left">1012</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile10</strong></td>
+<td align="left">2127</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile11</strong></td>
+<td align="left">2128</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile12</strong></td>
+<td align="left">2129</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile13</strong></td>
+<td align="left">2130</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile14</strong></td>
+<td align="left">2131</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile15</strong></td>
+<td align="left">2132</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile16</strong></td>
+<td align="left">2133</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile17</strong></td>
+<td align="left">2134</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile18</strong></td>
+<td align="left">2136</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile19</strong></td>
+<td align="left">1012</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile2</strong></td>
+<td align="left">1013</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile20</strong></td>
+<td align="left">2137</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile3</strong></td>
+<td align="left">1014</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile4</strong></td>
+<td align="left">1015</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile5</strong></td>
+<td align="left">1561</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile6</strong></td>
+<td align="left">1569</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile7</strong></td>
+<td align="left">1570</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile8</strong></td>
+<td align="left">1571</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileLastFile9</strong></td>
+<td align="left">1572</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNew</strong></td>
+<td align="left">1001</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNewBlankDrawing</strong></td>
+<td align="left">1579</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNewBlankDrawingMetric</strong></td>
+<td align="left">1671</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNewBlankDrawingUS</strong></td>
+<td align="left">1672</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNewBlankStencil</strong></td>
+<td align="left">1582</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNewBlankStencilMetric</strong></td>
+<td align="left">1673</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNewBlankStencilUS</strong></td>
+<td align="left">1674</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileNewStencilDlg</strong></td>
+<td align="left">1580</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileOpen</strong></td>
+<td align="left">1002</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileOpenStencil</strong></td>
+<td align="left">1442</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFilePrint</strong></td>
+<td align="left">1010</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSave</strong></td>
+<td align="left">1004</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAs</strong></td>
+<td align="left">1005</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsDrawing</strong></td>
+<td align="left">2306</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsDrawingPreviousFileFormat</strong></td>
+<td align="left">2298</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsDWG</strong></td>
+<td align="left">2305</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsEMF</strong></td>
+<td align="left">2302</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsJPG</strong></td>
+<td align="left">2301</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsPNG</strong></td>
+<td align="left">2300</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsSVG</strong></td>
+<td align="left">2303</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsTemplate</strong></td>
+<td align="left">2299</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsVDX</strong></td>
+<td align="left">2304</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSaveAsWebPage</strong></td>
+<td align="left">1785</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileSummaryInfoDlg</strong></td>
+<td align="left">1009</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFileUndoCheckout</strong></td>
+<td align="left">2109</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFirstTile</strong></td>
+<td align="left">1515</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFitContainerToContents</strong></td>
+<td align="left">2195</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFitCurve</strong></td>
+<td align="left">1538</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatAllTextProps</strong></td>
+<td align="left">1642</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatBehavior</strong></td>
+<td align="left">1071</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatBlock</strong></td>
+<td align="left">1070</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatCorners</strong></td>
+<td align="left">1334</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatCustPropDef</strong></td>
+<td align="left">1687</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatCustPropEdit</strong></td>
+<td align="left">1312</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatDefineStyles</strong></td>
+<td align="left">1064</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatDoubleClick</strong></td>
+<td align="left">1118</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatFill</strong></td>
+<td align="left">1066</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatInkDlg</strong></td>
+<td align="left">1955</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatLine</strong></td>
+<td align="left">1065</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatPainter</strong></td>
+<td align="left">1271</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatParagraph</strong></td>
+<td align="left">1068</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatPictureAutobalance</strong></td>
+<td align="left">2205</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatPictureCompressionDlg</strong></td>
+<td align="left">2212</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatProtection</strong></td>
+<td align="left">1072</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatShadow</strong></td>
+<td align="left">1333</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatSpecial</strong></td>
+<td align="left">1073</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatStyle</strong></td>
+<td align="left">1063</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatTabs</strong></td>
+<td align="left">1069</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFormatText</strong></td>
+<td align="left">1067</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdFullScreenMode</strong></td>
+<td align="left">1492</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdGoToPageToolbar</strong></td>
+<td align="left">1635</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdGrid</strong></td>
+<td align="left">1767</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdGuides</strong></td>
+<td align="left">1771</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHeaderFooter</strong></td>
+<td align="left">1720</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHelpAboutVisio</strong></td>
+<td align="left">1100</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHelpContents</strong></td>
+<td align="left">1092</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHelpMode</strong></td>
+<td align="left">1386</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHelpSearch</strong></td>
+<td align="left">1809</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHelpShapeBasics</strong></td>
+<td align="left">1822</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHelpTemplates</strong></td>
+<td align="left">1586</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHideAllToolbars</strong></td>
+<td align="left">1726</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHideDocumentStencil</strong></td>
+<td align="left">1689</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHideMoreShapes</strong></td>
+<td align="left">2291</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHyperlinkHier</strong></td>
+<td align="left">1611</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdHyperlinkList</strong></td>
+<td align="left">1719</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIconBucketTool</strong></td>
+<td align="left">1543</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIconLassoTool</strong></td>
+<td align="left">1544</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIconLeftColor</strong></td>
+<td align="left">1143</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIconPencilTool</strong></td>
+<td align="left">1145</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIconRightTool</strong></td>
+<td align="left">1144</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIconSelectNet</strong></td>
+<td align="left">1545</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIgnoreValidationIssue</strong></td>
+<td align="left">2254</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIgnoreValidationRule</strong></td>
+<td align="left">2256</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdImageProperties</strong></td>
+<td align="left">1887</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdImagePropertiesDlg</strong></td>
+<td align="left">1883</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIncreaseIndent</strong></td>
+<td align="left">1094</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIncreaseParaSpacing</strong></td>
+<td align="left">1096</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETAddToFavorites</strong></td>
+<td align="left">1506</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETCopyHyperlink</strong></td>
+<td align="left">1610</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETDeleteHlink</strong></td>
+<td align="left">1609</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETDiagrammingResources</strong></td>
+<td align="left">1606</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETEditHyperlink</strong></td>
+<td align="left">1619</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETGoBack</strong></td>
+<td align="left">1599</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETGoForward</strong></td>
+<td align="left">1598</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETKnowledgeBase</strong></td>
+<td align="left">1605</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETOpenHLink</strong></td>
+<td align="left">1607</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETOpenHLinkNewWnd</strong></td>
+<td align="left">1608</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETPasteAsHyperlink</strong></td>
+<td align="left">1620</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETUserSearchPage</strong></td>
+<td align="left">1595</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETVisioHomePage</strong></td>
+<td align="left">1596</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETVisioOnTheWeb</strong></td>
+<td align="left">1831</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdINETVisioSolutionsLibrary</strong></td>
+<td align="left">1604</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInkEraser</strong></td>
+<td align="left">1970</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInkReviewPen</strong></td>
+<td align="left">1971</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInkStockPen0</strong></td>
+<td align="left">1973</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInkStockPen1</strong></td>
+<td align="left">1974</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInkTool</strong></td>
+<td align="left">1661</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertAutoCADAddOn</strong></td>
+<td align="left">1521</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertCheckBoxControl</strong></td>
+<td align="left">2150</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertClipArt</strong></td>
+<td align="left">1497</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertClipArtDlg</strong></td>
+<td align="left">2345</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertComboBoxControl</strong></td>
+<td align="left">2152</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertComment</strong></td>
+<td align="left">1501</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertControlDlg</strong></td>
+<td align="left">1522</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertDataMap</strong></td>
+<td align="left">1282</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInserTextBoxControl</strong></td>
+<td align="left">2145</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertHyperLink</strong></td>
+<td align="left">1585</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertImageControl</strong></td>
+<td align="left">2148</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertLabelControl</strong></td>
+<td align="left">2144</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertLegendHorizontal</strong></td>
+<td align="left">2331</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertLegendVertical1</strong></td>
+<td align="left">2335</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertListBoxControl</strong></td>
+<td align="left">2153</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertMemberIntoList</strong></td>
+<td align="left">2174</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertMicrosoftGraph</strong></td>
+<td align="left">1499</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertNewBackgroundPage</strong></td>
+<td align="left">2165</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertPageTab</strong></td>
+<td align="left">2202</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertPushButtonControl</strong></td>
+<td align="left">2147</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertRadioButtonControl</strong></td>
+<td align="left">2151</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertScrollBarControl</strong></td>
+<td align="left">2149</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertSpinControl</strong></td>
+<td align="left">2146</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertTextBox</strong></td>
+<td align="left">2006</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertToggleButtonControl</strong></td>
+<td align="left">2154</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertVertTextBox</strong></td>
+<td align="left">2007</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdInsertWordArt</strong></td>
+<td align="left">1498</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdIntersect</strong></td>
+<td align="left">1453</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdJoin</strong></td>
+<td align="left">1533</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLanguagePreferencesDlg</strong></td>
+<td align="left">2363</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLast</strong></td>
+<td align="left">65535</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLastTile</strong></td>
+<td align="left">1516</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLayerDlg</strong></td>
+<td align="left">1446</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLayerSetupDlg</strong></td>
+<td align="left">1448</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLayoutDynamic</strong></td>
+<td align="left">1493</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLinkRowToShape</strong></td>
+<td align="left">1997</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdListInsertAfter</strong></td>
+<td align="left">2271</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdListInsertBefore</strong></td>
+<td align="left">2270</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdLockContainer</strong></td>
+<td align="left">2220</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMasterExplorer</strong></td>
+<td align="left">1916</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMasterSetup</strong></td>
+<td align="left">1343</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMDIMaximize</strong></td>
+<td align="left">1901</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMDIMinimize</strong></td>
+<td align="left">1902</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMDIRestore</strong></td>
+<td align="left">1903</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMinimizeRibbonToggle</strong></td>
+<td align="left">2232</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdModConnectPt</strong></td>
+<td align="left">1264</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdModControlPt</strong></td>
+<td align="left">1267</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMovConnectPt</strong></td>
+<td align="left">1269</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMove1D</strong></td>
+<td align="left">1186</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMove2D</strong></td>
+<td align="left">1187</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMoveComment</strong></td>
+<td align="left">1502</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMoveObject</strong></td>
+<td align="left">1185</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMsoAutoCorrect</strong></td>
+<td align="left">1872</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMsoAutoCorrectDlg</strong></td>
+<td align="left">1866</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMsoAutoFormat</strong></td>
+<td align="left">1873</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMsoCustomItem</strong></td>
+<td align="left">1896</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMSOInsertEquation</strong></td>
+<td align="left">1646</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMSOInsertSymbol</strong></td>
+<td align="left">1504</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMSOInsertSymbolDlg</strong></td>
+<td align="left">1505</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMsoMediaGallery</strong></td>
+<td align="left">1885</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdMultipleFileImport</strong></td>
+<td align="left">2201</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNewDefDocBlankDrawing</strong></td>
+<td align="left">1906</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNewForegroundPage</strong></td>
+<td align="left">2361</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNewFromExisting</strong></td>
+<td align="left">1897</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNewThemeColors</strong></td>
+<td align="left">2065</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNewThemeEffects</strong></td>
+<td align="left">2064</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNextCommentMarkup</strong></td>
+<td align="left">2180</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNextMarkup</strong></td>
+<td align="left">1914</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNextTile</strong></td>
+<td align="left">1514</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdNextWindow</strong></td>
+<td align="left">1886</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectAddToGroup</strong></td>
+<td align="left">1053</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectAlignObjects</strong></td>
+<td align="left">1049</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectBringForward</strong></td>
+<td align="left">1045</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectBringToFront</strong></td>
+<td align="left">1046</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectCombine</strong></td>
+<td align="left">1061</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectConnectObjects</strong></td>
+<td align="left">1050</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectConvertToGroup</strong></td>
+<td align="left">1055</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectDistributeDlg</strong></td>
+<td align="left">1230</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectFlipHorizontal</strong></td>
+<td align="left">1058</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectFlipVertical</strong></td>
+<td align="left">1057</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectFragment</strong></td>
+<td align="left">1062</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectGroup</strong></td>
+<td align="left">1051</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectHelp</strong></td>
+<td align="left">1428</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectInfoDlg</strong></td>
+<td align="left">1425</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectRemoveFromGroup</strong></td>
+<td align="left">1054</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectReverse</strong></td>
+<td align="left">1059</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectRotate90</strong></td>
+<td align="left">1056</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectSendBackward</strong></td>
+<td align="left">1047</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectSendToBack</strong></td>
+<td align="left">1048</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectSwapEnds</strong></td>
+<td align="left">1870</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectUngroup</strong></td>
+<td align="left">1052</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdObjectUnion</strong></td>
+<td align="left">1060</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOfficeCenterOptions</strong></td>
+<td align="left">2141</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOffsetDlg</strong></td>
+<td align="left">1387</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOfficeDiagnostics</strong></td>
+<td align="left">1890</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOpenActiveObject</strong></td>
+<td align="left">1601</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOpenCommentForEdit</strong></td>
+<td align="left">1503</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOpenInVisio</strong></td>
+<td align="left">1491</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsColorPaletteDlg</strong></td>
+<td align="left">1082</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsDeletePages</strong></td>
+<td align="left">1079</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsEditBackground</strong></td>
+<td align="left">1075</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsEditDrawing</strong></td>
+<td align="left">1074</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsGoToDrawing</strong></td>
+<td align="left">1077</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsNewPage</strong></td>
+<td align="left">1078</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsPageSetup</strong></td>
+<td align="left">1076</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsPreferences</strong></td>
+<td align="left">1081</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsProtectDocument</strong></td>
+<td align="left">1083</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsReorderPages</strong></td>
+<td align="left">1080</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdOptionsSnapGlueSetup</strong></td>
+<td align="left">1084</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPageAutoSizeToggle</strong></td>
+<td align="left">2333</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPageMeasureUnitsDlg</strong></td>
+<td align="left">1274</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPageSizeDlg</strong></td>
+<td align="left">2176</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPageSizeToFitDrawing</strong></td>
+<td align="left">2332</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPagesList</strong></td>
+<td align="left">1654</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPanObject</strong></td>
+<td align="left">1193</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPanZoom</strong></td>
+<td align="left">1653</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPasteShortcut</strong></td>
+<td align="left">1790</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPasteToLocation</strong></td>
+<td align="left">2221</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPauseRecordingMacro</strong></td>
+<td align="left">1778</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPreviousCommentMarkup</strong></td>
+<td align="left">2179</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPreviousMarkup</strong></td>
+<td align="left">1915</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPreviousTile</strong></td>
+<td align="left">1513</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPrintPage</strong></td>
+<td align="left">1443</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPrintPreview</strong></td>
+<td align="left">1490</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdProgRefHelp</strong></td>
+<td align="left">1584</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPublishToProcessRepository</strong></td>
+<td align="left">2294</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdPublishToVisioServices</strong></td>
+<td align="left">2293</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRecalcObjectWH</strong></td>
+<td align="left">1146</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRecordNewMacro</strong></td>
+<td align="left">1775</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdReinstateValidationIssue</strong></td>
+<td align="left">2255</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRelayoutShapes</strong></td>
+<td align="left">2068</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRemoveDataGraphicFromSel</strong></td>
+<td align="left">2107</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRemoveFromAllContainers</strong></td>
+<td align="left">2252</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRemoveMemberFromContainer</strong></td>
+<td align="left">2175</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRemoveMemberFromList</strong></td>
+<td align="left">2346</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRemoveThemeFromSel</strong></td>
+<td align="left">2119</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRemoveVBAFromActiveDoc</strong></td>
+<td align="left">1590</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdReorderList</strong></td>
+<td align="left">2197</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRHI</strong></td>
+<td align="left">2009</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRHIDlg</strong></td>
+<td align="left">2010</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdReOrderPage</strong></td>
+<td align="left">1795</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdResearchLookUp</strong></td>
+<td align="left">1967</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdResearchThesaurus</strong></td>
+<td align="left">2178</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdResearchTranslate</strong></td>
+<td align="left">1968</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdResumeRecordingMacro</strong></td>
+<td align="left">1779</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdReviewerVisibilityAll</strong></td>
+<td align="left">1836</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdReviewerVisibilityNone</strong></td>
+<td align="left">1919</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRightDragCancel</strong></td>
+<td align="left">1881</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRightDragCopy</strong></td>
+<td align="left">1879</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRightDragLink</strong></td>
+<td align="left">1880</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRightDragMove</strong></td>
+<td align="left">1878</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRotate90Clockwise</strong></td>
+<td align="left">1494</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRotateObject</strong></td>
+<td align="left">1190</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRulerGridDlg</strong></td>
+<td align="left">1318</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRulSub</strong></td>
+<td align="left">1766</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRunAddOnDlg</strong></td>
+<td align="left">1484</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdRunAddonMenu</strong></td>
+<td align="left">1090</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSaveAsFixedFormatDlg</strong></td>
+<td align="left">2117</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSaveForAutoRecover</strong></td>
+<td align="left">1857</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSelectContainerMembers</strong></td>
+<td align="left">2219</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSelectionModeExtend</strong></td>
+<td align="left">1909</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSelectionModeLasso</strong></td>
+<td align="left">1908</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSelectionModeRect</strong></td>
+<td align="left">1907</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSendAsMail</strong></td>
+<td align="left">1292</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetAddMarkup</strong></td>
+<td align="left">1744</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetCharColor</strong></td>
+<td align="left">1404</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetCharSizeDown</strong></td>
+<td align="left">1406</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetCharSizeUp</strong></td>
+<td align="left">1405</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetContainerProperties</strong></td>
+<td align="left">2181</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnAppearanceCurved</strong></td>
+<td align="left">1895</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnAppearanceDefault</strong></td>
+<td align="left">1893</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnAppearanceStraight</strong></td>
+<td align="left">1894</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_2pt</strong></td>
+<td align="left">1713</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_3pt</strong></td>
+<td align="left">1714</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_4pt</strong></td>
+<td align="left">1715</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_5pt</strong></td>
+<td align="left">1716</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_6pt</strong></td>
+<td align="left">1717</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_Arc</strong></td>
+<td align="left">1709</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_Gap</strong></td>
+<td align="left">1710</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_Page</strong></td>
+<td align="left">1708</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_Square</strong></td>
+<td align="left">1711</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnLineJumpStyle_Triangle</strong></td>
+<td align="left">1712</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnRerouteAsNeeded</strong></td>
+<td align="left">1697</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnRerouteFreely</strong></td>
+<td align="left">1696</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnRerouteNever</strong></td>
+<td align="left">1698</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnRerouteOnCrossover</strong></td>
+<td align="left">1837</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetDynConnRoutingStyle</strong></td>
+<td align="left">1700</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetFillColor</strong></td>
+<td align="left">1385</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetFillPattern</strong></td>
+<td align="left">1399</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetFillShadow</strong></td>
+<td align="left">1379</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetHeaderFooter</strong></td>
+<td align="left">1858</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetIndexInStencil</strong></td>
+<td align="left">1871</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetLanguageDlg</strong></td>
+<td align="left">1888</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetLineColor</strong></td>
+<td align="left">1359</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetLineCornerStyle</strong></td>
+<td align="left">1358</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetLineEnds</strong></td>
+<td align="left">1357</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetLinePattern</strong></td>
+<td align="left">1356</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetLineWeight</strong></td>
+<td align="left">1355</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPageLineJumpCode_D</strong></td>
+<td align="left">1703</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPageLineJumpCode_Horz</strong></td>
+<td align="left">1705</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPageLineJumpCode_Last</strong></td>
+<td align="left">1707</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPageLineJumpCode_None</strong></td>
+<td align="left">1704</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPageLineJumpCode_Vert</strong></td>
+<td align="left">1706</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPageOrientation</strong></td>
+<td align="left">2170</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPagePlow</strong></td>
+<td align="left">1699</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSetPageSize</strong></td>
+<td align="left">2171</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeActions</strong></td>
+<td align="left">1309</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeComment</strong></td>
+<td align="left">1686</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeCommentDelete</strong></td>
+<td align="left">1688</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeCommentDlg</strong></td>
+<td align="left">1685</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeExplorer</strong></td>
+<td align="left">1389</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeGalleryAddOn</strong></td>
+<td align="left">1867</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeGeo</strong></td>
+<td align="left">1769</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeHand</strong></td>
+<td align="left">1772</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeIntersect</strong></td>
+<td align="left">1830</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeLayerToolbar</strong></td>
+<td align="left">1634</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeSearchWindowToggle</strong></td>
+<td align="left">2344</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeStudioAddOn</strong></td>
+<td align="left">1985</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapesWindow</strong></td>
+<td align="left">1669</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeTransparency</strong></td>
+<td align="left">1875</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeTransparencyDlg</strong></td>
+<td align="left">1874</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShapeVert</strong></td>
+<td align="left">1773</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShowIgnoredIssuesToggle</strong></td>
+<td align="left">2258</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShowLineJumpsToggle</strong></td>
+<td align="left">2231</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShowShapeSheetDocument</strong></td>
+<td align="left">2169</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShowShapeSheetPage</strong></td>
+<td align="left">2168</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdShowShapeSheetShape</strong></td>
+<td align="left">2167</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSize1D</strong></td>
+<td align="left">1188</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSize2D</strong></td>
+<td align="left">1189</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSizeObjects</strong></td>
+<td align="left">1925</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSizePos</strong></td>
+<td align="left">1670</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSizeTextBlock</strong></td>
+<td align="left">1194</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSmartAlign</strong></td>
+<td align="left">2223</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSmartAlignAndSpace</strong></td>
+<td align="left">2222</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSmartSpace</strong></td>
+<td align="left">2224</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSpaceShapesAvoidPageBreaksToggle</strong></td>
+<td align="left">2340</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSpellingChange</strong></td>
+<td align="left">1889</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSpellingOptionsDlg</strong></td>
+<td align="left">2042</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowAddSection</strong></td>
+<td align="left">1384</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowChangeRowType</strong></td>
+<td align="left">1383</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowCollapse</strong></td>
+<td align="left">1250</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowDeselect</strong></td>
+<td align="left">1253</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowExpand</strong></td>
+<td align="left">1251</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowPasteFunction</strong></td>
+<td align="left">1382</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowPasteName</strong></td>
+<td align="left">1381</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowSelect</strong></td>
+<td align="left">1252</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowShowSection</strong></td>
+<td align="left">1380</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSSWindowShowTraceWindow</strong></td>
+<td align="left">1781</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStampTool</strong></td>
+<td align="left">1424</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStartRecordingMacro</strong></td>
+<td align="left">1776</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenActivate</strong></td>
+<td align="left">1458</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenAutoArrange</strong></td>
+<td align="left">1483</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenCleanup</strong></td>
+<td align="left">1106</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenClose</strong></td>
+<td align="left">1452</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenDrawingExplorer</strong></td>
+<td align="left">1796</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenEditDrawing</strong></td>
+<td align="left">1102</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenEditIcon</strong></td>
+<td align="left">1101</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenEditOff</strong></td>
+<td align="left">1681</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenEditOn</strong></td>
+<td align="left">1680</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenEditToggle</strong></td>
+<td align="left">1679</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenIconAndDetail</strong></td>
+<td align="left">1892</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenIconAndName</strong></td>
+<td align="left">1480</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenIconOnly</strong></td>
+<td align="left">1481</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenImageMaster</strong></td>
+<td align="left">1105</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenNameMaster</strong></td>
+<td align="left">1103</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenNameOnly</strong></td>
+<td align="left">1482</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenNamesUnderIcons</strong></td>
+<td align="left">2005</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenNewMaster</strong></td>
+<td align="left">1104</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenProperties</strong></td>
+<td align="left">1678</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenSave</strong></td>
+<td align="left">1676</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStenSaveAs</strong></td>
+<td align="left">1677</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStopIgnoringValidationRule</strong></td>
+<td align="left">2257</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdStopRecordingMacro</strong></td>
+<td align="left">1777</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSubtract</strong></td>
+<td align="left">1454</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWAccept</strong></td>
+<td align="left">1140</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWAddSectionDlg</strong></td>
+<td align="left">1116</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWCancel</strong></td>
+<td align="left">1139</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWChangeRowTypeDlg</strong></td>
+<td align="left">1114</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWDeleteRow</strong></td>
+<td align="left">1115</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWDeleteSection</strong></td>
+<td align="left">1117</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWExpandRow</strong></td>
+<td align="left">1718</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWFormula</strong></td>
+<td align="left">1141</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWInsertRow</strong></td>
+<td align="left">1112</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWInsertRowAfter</strong></td>
+<td align="left">1113</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWPasteFunctionDlg</strong></td>
+<td align="left">1111</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWPasteNameDlg</strong></td>
+<td align="left">1110</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWShapeActionDlg</strong></td>
+<td align="left">1444</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWShowFormulas</strong></td>
+<td align="left">1108</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWShowSectionsDlg</strong></td>
+<td align="left">1109</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWShowToggle</strong></td>
+<td align="left">1142</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdSWShowValues</strong></td>
+<td align="left">1107</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTaskPane</strong></td>
+<td align="left">1896</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTaskPaneDocumentManagement</strong></td>
+<td align="left">1972</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTaskPaneResearch</strong></td>
+<td align="left">1969</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTaskPaneReviewer</strong></td>
+<td align="left">1939</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTaskTogglePreviewSize</strong></td>
+<td align="left">2053</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextAllCaps</strong></td>
+<td align="left">1862</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextBlockTool</strong></td>
+<td align="left">1451</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextBold</strong></td>
+<td align="left">1131</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextDoubleStrikeThrough</strong></td>
+<td align="left">1951</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextDoubleULine</strong></td>
+<td align="left">1863</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextEditRuler</strong></td>
+<td align="left">1810</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextEditState</strong></td>
+<td align="left">1214</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextFont</strong></td>
+<td align="left">1129</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextHAlignCenter</strong></td>
+<td align="left">1408</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextHAlignDistribute</strong></td>
+<td align="left">1952</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextHAlignJustify</strong></td>
+<td align="left">1412</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextHAlignLeft</strong></td>
+<td align="left">1407</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextHAlignRight</strong></td>
+<td align="left">1409</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextItalic</strong></td>
+<td align="left">1132</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextRotate90</strong></td>
+<td align="left">1098</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextSize</strong></td>
+<td align="left">1130</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextSmallCaps</strong></td>
+<td align="left">1133</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextStrikeThrough</strong></td>
+<td align="left">1741</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextStyle</strong></td>
+<td align="left">1128</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextSubscript</strong></td>
+<td align="left">1135</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextSuperScript</strong></td>
+<td align="left">1134</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextULine</strong></td>
+<td align="left">1136</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextVAlignBottom</strong></td>
+<td align="left">1422</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextVAlignMiddle</strong></td>
+<td align="left">1414</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTextVAlignTop</strong></td>
+<td align="left">1413</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToggleDocumentStencil</strong></td>
+<td align="left">1690</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToolsArrayShapesAddOn</strong></td>
+<td align="left">1354</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToolsInventory</strong></td>
+<td align="left">1335</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToolsLayoutShapesDlg</strong></td>
+<td align="left">1574</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToolsMacroDlg</strong></td>
+<td align="left">1577</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToolSnapLines</strong></td>
+<td align="left">1807</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToolsRunVBE</strong></td>
+<td align="left">1576</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdToolsSpelling</strong></td>
+<td align="left">1270</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTranslateOptions</strong></td>
+<td align="left">2352</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTrim</strong></td>
+<td align="left">1534</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTrustCenterDlg</strong></td>
+<td align="left">2104</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTurnToNextPage</strong></td>
+<td align="left">1148</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdTurnToPrevPage</strong></td>
+<td align="left">1147</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUFEditClear</strong></td>
+<td align="left">1023</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUFEditCopy</strong></td>
+<td align="left">1021</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUFEditCut</strong></td>
+<td align="left">1020</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUFEditDuplicate</strong></td>
+<td align="left">1024</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUFEditPaste</strong></td>
+<td align="left">1022</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUFEditSelectAll</strong></td>
+<td align="left">1025</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUpdateColumnsInLinkedShapes</strong></td>
+<td align="left">2061</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdUpdateContentCache</strong></td>
+<td align="left">1241</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidateDiagram</strong></td>
+<td align="left">2253</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidationIssueNavigateToShape</strong></td>
+<td align="left">2236</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidationIssuesArrangeByCategory</strong></td>
+<td align="left">2279</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidationIssuesArrangeByIgnored</strong></td>
+<td align="left">2281</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidationIssuesArrangeByPage</strong></td>
+<td align="left">2280</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidationIssuesArrangeByRule</strong></td>
+<td align="left">2278</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidationIssuesArrangeOriginalOrder</strong></td>
+<td align="left">2282</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdValidationIssuesWindowToggle</strong></td>
+<td align="left">2263</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdView100</strong></td>
+<td align="left">1035</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdView150</strong></td>
+<td align="left">1036</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdView200</strong></td>
+<td align="left">1037</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdView400</strong></td>
+<td align="left">1280</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdView50</strong></td>
+<td align="left">1279</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdView75</strong></td>
+<td align="left">1034</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewConnections</strong></td>
+<td align="left">1042</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewCustom</strong></td>
+<td align="left">1038</td>
+<td align="left">Yes</td>
+<td align="left">Yes</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewDirectionToggle</strong></td>
+<td align="left">2012</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewFitInWindow</strong></td>
+<td align="left">1033</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewGrid</strong></td>
+<td align="left">1040</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewGuides</strong></td>
+<td align="left">1041</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewLeftToRight</strong></td>
+<td align="left">2013</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewPageBreaks</strong></td>
+<td align="left">1509</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewRightToLeft</strong></td>
+<td align="left">2014</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewRulers</strong></td>
+<td align="left">1039</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdViewStatusBar</strong></td>
+<td align="left">1044</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdWindowCascadeAll</strong></td>
+<td align="left">1086</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdWindowNewWindow</strong></td>
+<td align="left">1085</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdWindowShowDrawPage</strong></td>
+<td align="left">1091</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdWindowShowMasterObjects</strong></td>
+<td align="left">1089</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdWindowShowShapeSheet</strong></td>
+<td align="left">1088</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdWindowTileAll</strong></td>
+<td align="left">1087</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomArea</strong></td>
+<td align="left">1218</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomIn</strong></td>
+<td align="left">1216</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomInIgnoreSel</strong></td>
+<td align="left">1917</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomLast</strong></td>
+<td align="left">1495</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomOut</strong></td>
+<td align="left">1217</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomOutIgnoreSel</strong></td>
+<td align="left">1918</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomPageWidth</strong></td>
+<td align="left">1496</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomPt</strong></td>
+<td align="left">1215</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr>
+<tr>
+<td align="left"><strong>visCmdZoomSingleTile</strong></td>
+<td align="left">1512</td>
+<td align="left">Yes</td>
+<td align="left">No</td>
+</tr></tbody></table><br>
+<p><a>© Корпорация Майкрософт (Microsoft Corporation). Все права защищены.</a></span></p>
 </body>
 </html>
