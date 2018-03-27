@@ -1,4 +1,6 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
+
 
 <head>
   <meta http-equiv=Content-Type content="text/html; charset=windows-1251">
@@ -24,8 +26,7 @@ href="../Основные понятия.htm">Основные понятия</a
  <tr>
   <td valign=top style='border:none;border-bottom:solid #D4DFFF 1.0pt;
   padding:.75pt .75pt .75pt .75pt'>
-<h1>Представления формата</span></span></b><span style='font-size:8.0pt;line-height:115%;
-  font-family:"Segoe UI","sans-serif"'> </span></p>
+<h1>Представления формата</h1>
   </td>
  </tr>
 </table>
@@ -57,7 +58,7 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   line-height:115%;font-family:"Segoe UI","sans-serif"'>Чтобы определить
   представление формата даты или времени с помощью форматирования системы
   Microsoft Office, заключите представление в двойные фигурные скобки, например
-  &quot;{{д.м.гг}}&quot;. Если применяется один из предварительно заданных
+  &quot;{{m/d/yy}}&quot;. <br/> Если применяется один из предварительно заданных
   форматов, например 201, заключите его в фигурные и угловые скобки:
   &quot;{&lt;201&gt;}&quot;.</span></p>
   </td>
@@ -109,8 +110,8 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   замещает первую цифру, части единицы измерения, равные 0, не отображаются.</span></p>
   <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
-  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(0фт
-  11,25дюйм,&quot;#.##u&quot;) отображает &quot;11,25дюйм&quot;.</span></p>
+  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(0 ft
+  11.25 in,&quot;#.##u&quot;) отображает &quot;11.25 in&quot;.</span></p>
   </td>
  </tr>
  <tr>
@@ -132,8 +133,8 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   измерения, равные 0, отображаются.</span></p>
   <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
-  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(2фт
-  11,33дюйм,&quot;0.## u&quot;) отображает &quot;2 фт 11,33 дюйм&quot;.</span></p>
+  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(2 in
+  11.33 in,&quot;0.## u&quot;) отображает &quot;2 ft 11.33 in&quot;.</span></p>
   </td>
  </tr>
  <tr>
@@ -155,8 +156,8 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   стандарты</b> системы (на панели управления).</span></p>
   <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
-  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(250 см,&quot;0.000
-  u&quot;) Отображает &quot;250,000 см&quot;.</span></p>
+  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(250 cm,&quot;0.000
+  u&quot;) Отображает &quot;250.000 cm&quot;.</span></p>
   </td>
  </tr>
  <tr>
@@ -199,7 +200,7 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
   font-family:"Segoe UI","sans-serif"'>Например,
-  FORMAT(12345.67,&quot;###.#e+#&quot;) отображает &quot;123,5e+2&quot;.</span></p>
+  FORMAT(12345.67,&quot;###.#e+#&quot;) отображает &quot;123.5e+2&quot;.</span></p>
   </td>
  </tr>
  <tr>
@@ -221,8 +222,8 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   заполнителем.</span></p>
   <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
-  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(12 ц 13
-  д,&quot;#u&quot;) отображает &quot;13ц1&quot;.</span></p>
+  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(12 c 13
+  d,&quot;#u&quot;) отображает &quot;13d1&quot;.</span></p>
   </td>
  </tr>
  <tr>
@@ -243,8 +244,8 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   обозначением добавляется то же число пробелов, что и перед заполнителем.</span></p>
   <p class=MsoNormal style='margin-top:7.2pt;margin-right:.75pt;margin-bottom:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
-  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(12.43дюйм,&quot;# #/4
-  UU&quot;) отображает &quot;12 2/4 ДЮЙМЫ&quot;.</span></p>
+  font-family:"Segoe UI","sans-serif"'>Например, FORMAT(12.43 in,&quot;# #/4
+  UU&quot;) отображает &quot;12 2/4 in&quot;.</span></p>
   </td>
  </tr>
  <tr>
@@ -357,7 +358,7 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
   font-family:"Segoe UI","sans-serif"'>Заполнитель краткого обозначения.
   Вставляет стандартный символ для местной денежной единицы или трехзначную
-  аббревиатуру для денежных единиц других стран. Например: 99,00р, 42,70 FRF.
+  аббревиатуру для денежных единиц других стран. Например: 99.00р, 42.70 FRF.
   При использовании заполнителя u обозначения имеют нижний или смешенный
   регистр, при использовании U — верхний регистр.</span></p>
   </td>
@@ -393,7 +394,7 @@ margin-left:0cm;line-height:9.75pt;background:white'><span style='font-size:
   7.2pt;margin-left:.75pt'><span style='font-size:8.0pt;line-height:115%;
   font-family:"Segoe UI","sans-serif"'>Заполнитель универсального обозначения.
   Вставляет универсальные трехзначные аббревиатуры для всех денежных единиц
-  после каждой части единицы. Например: 99,00 RUB, 42,70 FRF. При использовании
+  после каждой части единицы. Например: 99.00 RUB, 42.70 FRF. При использовании
   заполнителя u обозначения имеют нижний регистр, при использовании U — верхний
   регистр. Перед обозначением добавляется то же число пробелов, что и перед
   заполнителем.</span></p>
